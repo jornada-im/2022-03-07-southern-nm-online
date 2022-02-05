@@ -362,7 +362,7 @@ of code below the Schedule `<h2>` header below with
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
+{% include custom_schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
@@ -446,3 +446,11 @@ Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
+
+<div>
+  <h3>Acknowledgment</h3>
+  <p>This workshop is funded through the National Science Foundation EPSCoR Cooperative Agreement OIA-1757207. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+  </p>
+  <img src="./assets/img/RII4_LOGO_EPSCoR-01.png" alt="NM EPSCoR Logo" width="300">&nbsp;&nbsp;
+  <img src="./assets/img/NSF_4-Color_bitmap_Logo.png" alt="NSF Logo" width="100">
+</div>
