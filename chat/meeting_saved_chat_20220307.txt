@@ -1,0 +1,316 @@
+12:49:46 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://www.surveymonkey.com/r/DQPVFWD
+12:50:22 From Yohannes Getahun to Everyone:
+	Hello!
+12:50:42 From Yohannes Getahun to Everyone:
+	Will this meeting be recorded and possibly shared?
+12:51:49 From Gregory Maurer (Jornada LTER) to Everyone:
+	@Yohannes - we do not record workshops
+12:52:24 From Yohannes Getahun to Everyone:
+	I understand. Thank you!
+12:52:55 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://www.surveymonkey.com/r/DQPVFWD
+12:57:30 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://www.surveymonkey.com/r/DQPVFWD
+13:01:13 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://www.surveymonkey.com/r/DQPVFWD
+13:12:55 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html
+13:17:36 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://pad.carpentries.org/2022-03-07-southern-nm-online
+13:20:02 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://datacarpentry.org/ecology-workshop/data/
+13:34:10 From Diana Macias to Everyone:
+	what file type would you recommend for the metadata? Excel, word doc, some other file?
+13:34:57 From Dawn Browning ARS to Everyone:
+	Krikey.
+13:35:57 From Jon Wheeler (he/him) UNM to Everyone:
+	@Diana, we recommend a plain text format (README.txt, for example). Plain text doesn't have platform or application dependencies, which facilitates preservation and sharing.
+13:36:51 From David.Huber to Everyone:
+	I label a new tab for metadata, that I convert to a txt file for a data DOI later on.
+13:36:56 From Alesia Hallmark (co-instructor) to Everyone:
+	@Diana: If you use a .txt format, you can also avoid that “this is an old version of Word. You may have lost data” message!
+13:38:22 From Savannah Meadors (she/her/hers) to Everyone:
+	What is the VIM program he's using? Is this just like a notes app for apple?
+13:39:05 From Gregory Maurer (Jornada LTER) to Everyone:
+	http://www.jstatsoft.org/v59/i10
+13:39:55 From Jon Wheeler (he/him) UNM to Everyone:
+	@Savannah, that's a great question. VIM is an open source text editor like Notepad on Windows and the default text editor on Mac. I will post a link to the VIM web page in the etherpad
+13:42:28 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Does that apply for dates too? i.e., separate columns for day, month, and year?
+13:42:55 From Alesia Hallmark (co-instructor) to Everyone:
+	Great question, Gregor. We’ll go over dates soon…
+13:43:06 From Alesia Hallmark (co-instructor) to Everyone:
+	in short, YES
+13:43:21 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Sounds good, thanks
+13:44:10 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://ndownloader.figshare.com/files/2252083
+13:46:45 From Nazanin to Everyone:
+	I couldn't find the file
+13:50:51 From Gregory Maurer (Jornada LTER) to Everyone:
+	@Nazanin - did you use this link: https://ndownloader.figshare.com/files/2252083
+14:02:01 From Julie Schlichte to Everyone:
+	For plot 4 on data sheet 2 (2014), are we to assume 1978 is the correct year?
+14:03:22 From Nazanin to Everyone:
+	hi yes thank you so much
+14:03:56 From Diana Macias to Everyone:
+	Similarly, for plot 3 the date collected is incomplete
+14:07:55 From David.Huber to Everyone:
+	Looks like plot 3 for 2014 was actually formatted for day/month only but has year 2015 if expanded to mm/dd/yyyy format
+14:14:48 From Alesia Hallmark (co-instructor) to Everyone:
+	https://datacarpentry.org/spreadsheet-ecology-lesson/03-dates-as-data/index.html
+14:25:33 From David.Huber to Everyone:
+	For data analysis and figures, how about combining columns of date,month,yrs?
+14:25:41 From Julie Schlichte to Everyone:
+	Haha maybe
+14:25:44 From Gregor Hamilton - UNM (he/him) to Everyone:
+	I'll sign anything you put in front of me
+14:26:59 From David.Huber to Everyone:
+	Thx
+14:27:14 From Edmundo Medina (he/him) to Everyone:
+	https://datacarpentry.org/spreadsheet-ecology-lesson/05-exporting-data/index.html
+14:31:45 From Diana Macias to Everyone:
+	what would you recommend to use instead of commas?
+14:31:54 From Diana Macias to Everyone:
+	if you want to maintain it in csv
+14:32:06 From Alesia Hallmark (co-instructor) to Everyone:
+	semicolons are a common choice
+14:32:28 From Gregory Maurer (Jornada LTER) to Everyone:
+	Semicolons work well, or tabs
+14:34:28 From Diana Macias to Everyone:
+	do any of you use tsvs?
+14:34:52 From Gregory Maurer (Jornada LTER) to Everyone:
+	Demographic survey (please complete if you haven’t): https://www.surveymonkey.com/r/DQPVFWD
+14:35:16 From Jon Wheeler (he/him) UNM to Everyone:
+	@Diana, yes. Some data sources - I think for example the US Census - use TSV formats
+14:36:01 From Jon Wheeler (he/him) UNM to Everyone:
+	Often the delimiter can be specified on import/export of a delimited text file into and out of Excel, R, and other applications
+14:36:49 From Jon Wheeler (he/him) UNM to Everyone:
+	Back at 2:51
+14:52:40 From Savannah Meadors (she/her/hers) to Everyone:
+	fine for me
+14:52:47 From Habibur to Everyone:
+	Looks good
+14:54:25 From Jon Wheeler (he/him) UNM to Everyone:
+	Etherpad link (we will post SQL exercises there, and can share questions, resources, etc.): https://pad.carpentries.org/2022-03-07-southern-nm-online
+14:57:20 From Jon Wheeler (he/him) UNM to Everyone:
+	Link to the Zipfile on figshare: https://figshare.com/ndownloader/articles/1314459/versions/10
+14:58:26 From Savannah Meadors (she/her/hers) to Everyone:
+	Should we open these in a txt editor or is excel fine
+14:58:37 From Jon Wheeler (he/him) UNM to Everyone:
+	Excel is fine, too
+15:00:07 From Savannah Meadors (she/her/hers) to Everyone:
+	kangaroo rats
+15:00:10 From Jon Wheeler (he/him) UNM to Everyone:
+	Line 42 in the etherpad
+15:00:40 From Jon Wheeler (he/him) UNM to Everyone:
+	Questions on line 48-51
+15:01:29 From Savannah Meadors (she/her/hers) to Everyone:
+	write something down in the etherpad chat? Or directly into the document? Sorry I'm not totally sure how to use it just yet
+15:01:44 From Jon Wheeler (he/him) UNM to Everyone:
+	Please feel free to jot your thoughts directly in the etherpad. We will show how to save/export the etherpad later today
+15:02:11 From Jon Wheeler (he/him) UNM to Everyone:
+	@Savannah that's a good question - you should be able to type right on the etherpad document directly
+15:03:32 From Nazanin to Everyone:
+	I'm not sure how to do it as well
+15:05:21 From Jon Wheeler (he/him) UNM to Everyone:
+	@Nazanin, try clicking with your mouse into the document where the colored text is. You should be able to write automatically, but please message me if not.
+15:06:18 From Nazanin to Everyone:
+	thank you so much
+15:21:26 From David.Huber to Everyone:
+	Dawn, ARS, had to get admin to run
+15:21:41 From Nazanin to Everyone:
+	I don't have sqlite viewer
+15:22:15 From Dawn Browning ARS to Everyone:
+	@David.Huber I logged in as admin...but will try again.
+15:22:46 From David.Huber to Everyone:
+	Ah, I have to have IT install everything
+15:22:47 From Gregory Maurer (Jornada LTER) to Everyone:
+	Https://sqlitebrowser.org/dl/
+15:23:05 From Gregory Maurer (Jornada LTER) to Everyone:
+	@Nazanin if you follow along here you may be able to get it installed
+15:23:48 From Nazanin to Everyone:
+	thank you because  I follow up with mobile that's why it's difficult  thank you for your understanding
+15:26:12 From David.Huber to Everyone:
+	ARS, IT just had to install it for my computer is all
+15:26:27 From Jon Wheeler (he/him) UNM to Everyone:
+	Please do message a helper with additional installation questions
+15:38:11 From Savannah Meadors (she/her/hers) to Everyone:
+	could you add all three at once, or does that make SQLite unhappy?
+15:38:33 From Gregor Hamilton - UNM (he/him) to Everyone:
+	I tried and it didn't seem to like it - it only took the first one
+15:38:42 From Gregor Hamilton - UNM (he/him) to Everyone:
+	I think...
+15:38:48 From Savannah Meadors (she/her/hers) to Everyone:
+	ok, thank you!
+15:39:22 From Jon Wheeler (he/him) UNM to Everyone:
+	yep, tables can be imported from CSV one at a time
+15:40:11 From Darren James (Helper) to Everyone:
+	@Gregor were you able to import "surveys.csv" by itself?
+15:41:03 From Jon Wheeler (he/him) UNM to Everyone:
+	But for a reproducible workflow, you could write a SQL script that would automatically import CSV files into new copies of a database. So it doesn't have to be done manually.
+15:41:40 From Gregor Hamilton - UNM (he/him) to Everyone:
+	@Darren - yes, thanks
+15:42:30 From Christopher Vito to Everyone:
+	What is the difference between real and numeric? I understand that integer shouldn't include decimals
+15:43:28 From Dawn Browning ARS to Everyone:
+	which csvs?
+15:43:44 From Savannah Meadors (she/her/hers) to Everyone:
+	Plots and species
+15:44:07 From Nazanin to Everyone:
+	nu.eric digit is a single symbol
+15:44:18 From Gregor Hamilton - UNM (he/him) to Everyone:
+	I had the same question, Chris, thanks for asking
+15:45:40 From Gregory Maurer (Jornada LTER) to Everyone:
+	https://datacarpentry.org/sql-ecology-lesson/00-sql-introduction/index.html
+15:47:06 From Christopher Vito to Everyone:
+	Ok, thanks!
+15:51:02 From Diana Macias to Everyone:
+	why would you add a new field in sql and not on the raw csv data file?
+15:54:14 From Savannah Meadors (she/her/hers) to Everyone:
+	What new field did we add to our portal_mammals database?
+15:54:23 From Savannah Meadors (she/her/hers) to Everyone:
+	or was that a more general question
+15:54:25 From Gayle Tyree (they/them) to Everyone:
+	common_name
+15:54:32 From Savannah Meadors (she/her/hers) to Everyone:
+	thank you!
+15:54:36 From Gayle Tyree (they/them) to Everyone:
+	Or some such! :)
+15:55:32 From Gregory Maurer (Jornada LTER) to Everyone:
+	It was common_name
+15:56:08 From Gregory Maurer (Jornada LTER) to Everyone:
+	But we won’t use that down the road
+15:58:48 From Gregor Hamilton - UNM (he/him) to Everyone:
+	is the semicolon signifying the end of the query?
+15:59:06 From Gregory Maurer (Jornada LTER) to Everyone:
+	Yes - exactly. Semicolons finish a query
+15:59:29 From Gregor Hamilton - UNM (he/him) to Everyone:
+	👍
+15:59:45 From Savannah Meadors (she/her/hers) to Everyone:
+	is --- how you annotate code in SQL
+15:59:55 From Dawn Browning ARS to Everyone:
+	This is SO helpful and a great way to learn SQL interactively. @Ruben Baca
+16:00:18 From Gregory Maurer (Jornada LTER) to Everyone:
+	— yes this is a comment in SQL (prefix with two dashes)
+16:01:17 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Great, thanks for explaining that Jon
+16:02:39 From Savannah Meadors (she/her/hers) to Everyone:
+	Is Jon's mic spotty for anyone else?
+16:02:45 From Carla Gavilan to Everyone:
+	yesp
+16:02:46 From Gregor Hamilton - UNM (he/him) to Everyone:
+	yeah
+16:02:49 From Savannah Meadors (she/her/hers) to Everyone:
+	I'm having a little trouble hearing
+16:02:49 From Gayle Tyree (they/them) to Everyone:
+	Ja
+16:02:49 From Lauren Cohen to Everyone:
+	yes
+16:02:51 From Julie Schlichte to Everyone:
+	yes
+16:04:39 From Gregory Maurer (Jornada LTER) to Everyone:
+	/* This is a
+16:04:45 From Gregory Maurer (Jornada LTER) to Everyone:
+	Multiline comment */
+16:07:10 From Gayle Tyree (they/them) to Everyone:
+	I'm getting this error with the LIMIT command. Anyone else?
+16:07:11 From Gayle Tyree (they/them) to Everyone:
+	Execution finished with errors.	Result: near "LIMIT": syntax error	At line 7:	LIMIT
+16:07:51 From Darren James (Helper) to Everyone:
+	@Gayle Can you post your SQL code in the chat?
+16:07:53 From Casey Wagnon to Everyone:
+	When we save the database does it save the code?
+16:08:12 From Gayle Tyree (they/them) to Everyone:
+	SELECT *	FROM surveys;	LIMIT 10;
+16:08:45 From Alesia Hallmark (co-instructor) to Everyone:
+	@ Gayle: delete the first semicolon
+16:08:57 From Darren James (Helper) to Everyone:
+	@ Gayle I think you need to specify columns:
+16:08:57 From Darren James (Helper) to Everyone:
+	select year, month, day 	from surveys 	limit 10;
+16:09:32 From Gayle Tyree (they/them) to Everyone:
+	Did the trick! Thanks Darren and Alesia!
+16:10:13 From Darren James (Helper) to Everyone:
+	@Gayle I was wrong--like @Alseia said the culprit was the extra semicolon
+16:10:13 From Casey Wagnon to Everyone:
+	Thanks
+16:12:57 From Diana Macias to Everyone:
+	can you repeat the q? lol
+16:13:17 From Gregory Maurer (Jornada LTER) to Everyone:
+	Write a query that returns the year, month, day, species_id and weight in mg.
+16:13:40 From Dawn Browning ARS to Everyone:
+	can you scroll up  to see lines or expand the top window and decrease the bottom one?
+16:18:24 From Trevor Roberts to Everyone:
+	Are ‘’ and “” equivalent in sql?
+16:18:56 From Casey Wagnon to Everyone:
+	Can you save queries as new datasets?
+16:19:33 From Savannah Meadors (she/her/hers) to Everyone:
+	I'd like to second Trevor's question!
+16:22:47 From Gregor Hamilton - UNM (he/him) to Everyone:
+	yes
+16:26:21 From Jon Wheeler (he/him) UNM to Everyone:
+	Exercise: Produce a table listing the data for all individuals in Plot 1 that weighed more than 75 grams, telling us the date, species id code, and weight (in kg).
+16:26:45 From Savannah Meadors (she/her/hers) to Everyone:
+	I tried to also add an "AND (year >= 2000)" field and it did not work, do you have to choose between or/and commands or did I do something wweird?
+16:34:10 From Gregor Hamilton - UNM (he/him) to Everyone:
+	I'm curious if it is best practice to do some of this subsetting here in SQL browser or in R from a raw data file? Or rather, in what cases should you manipulate data here in SQL prior to use in data analysis?
+16:37:14 From Gregory Maurer (Jornada LTER) to Everyone:
+	Either is fine Gregor, it really depends on your workflow. If you are using a database for your data, then it makes sense to do the subsetting with SQL (and you can do it in tandem with R as we will see tomorrow). But if your data are in raw data files you can bypass the database and just use R
+16:38:20 From Diana Macias to Everyone:
+	is there a cheatsheet with sql commands?
+16:39:37 From Gregory Maurer (Jornada LTER) to Everyone:
+	There are many: https://learnsql.com/blog/sql-basics-cheat-sheet/
+16:39:57 From Gayle Tyree (they/them) to Everyone:
+	So it's not a problem if names of different objects are duplicated? I'm referring to 'species' as the name for both a dataset and a column name
+16:41:48 From Gayle Tyree (they/them) to Everyone:
+	Great! Thanks Jon!
+16:42:53 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Far out, thanks Greg and Jon
+16:42:57 From Gregory Maurer (Jornada LTER) to Everyone:
+	@Gayle There are also aliases (AS) to give fields or tables a unique name within a query, which can be handy and we will probably touch on it tomorrow.
+16:43:25 From Jon Wheeler (he/him) UNM to Everyone:
+	Data Carpentry SQL reference: https://datacarpentry.org/sql-ecology-lesson/reference.html
+16:45:08 From Gregory Maurer (Jornada LTER) to Everyone:
+	A direct link to the DataCarpentry cheat sheet: https://datacarpentry.org/sql-ecology-lesson/files/sql-cheat-sheet.html
+16:45:23 From Gayle Tyree (they/them) to Everyone:
+	Also - when I run a query it looks like SQL flips through my past output before generating one from a new command. Is that taxing on processing speed at all? (If I'm correctly interpreting what's happening, that is...)
+16:46:12 From Gayle Tyree (they/them) to Everyone:
+	Nm, I think I was just running all my code over and over instead of the last query!
+16:47:37 From Gregory Maurer (Jornada LTER) to Everyone:
+	That is probably what happened, this isn’t necessarily a problem since these are quick queries, but if your queries take a long time you might want to only rerun them when you need to.
+16:48:17 From Gayle Tyree (they/them) to Everyone:
+	Got it, thanks again Greg!
+16:50:15 From Jon Wheeler (he/him) UNM to Everyone:
+	Exercise: Let’s try to combine what we’ve learned so far in a single query. Using the surveys table, write a query to display the three date fields, species_id, and weight in kilograms (rounded to two decimal places), for individuals captured in 1999, ordered alphabetically by the species_id.
+16:54:20 From Julie Schlichte to Everyone:
+	Thank you! I was having trouble with the order of execution, but this made it very clear why I was getting errors!
+16:54:28 From Carla Gavilan to Everyone:
+	yay!
+16:55:00 From Savannah Meadors (she/her/hers) to Everyone:
+	This code wasn't giving me any output, I'm not sure what I'm doing wrong
+16:55:34 From Darren James (Helper) to Everyone:
+	@Savannah can you paste your SQL code in the chat?
+16:56:05 From Savannah Meadors (she/her/hers) to Everyone:
+	SELECT year, month, day, species_id, ROUND(weight/ 1000, 2)as weight_kg	FROM surveys	WHERE year = 1999	ORDER BY species_id, ASC;
+16:56:23 From Dawn Browning ARS to Everyone:
+	Paste link here?
+16:56:36 From Alesia Hallmark (co-instructor) to Everyone:
+	https://forms.gle/hTbWyEFqKYvRDc558
+16:57:15 From Darren James (Helper) to Everyone:
+	@Savannah just remove the comma after species_id on the ORDER BY statement
+16:57:40 From Savannah Meadors (she/her/hers) to Everyone:
+	nice! thank you that fixed it!
+16:58:51 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Thanks Greg et al.!
+16:58:56 From David.Huber to Everyone:
+	Great, thanks all!
+16:59:06 From Trevor Roberts to Everyone:
+	Thanks!
+16:59:11 From Julie Schlichte to Everyone:
+	Thank you and see you tomorrow all
+16:59:11 From Carla Gavilan to Everyone:
+	Thanks!!!
+16:59:18 From Nazanin to Everyone:
+	thank you so much

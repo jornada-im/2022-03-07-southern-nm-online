@@ -1,0 +1,280 @@
+12:56:29 From Carla Gavilan to Everyone:
+	@Geovany Nice set up!!!
+12:57:13 From Geovany Ramirez to Everyone:
+	Thank you Carla.
+12:59:08 From Jon Wheeler (he/him) UNM to Everyone:
+	Welcome back everyone!
+13:00:22 From Jon Wheeler (he/him) UNM to Everyone:
+	For a reminder, our workshop website with a schedule and links to lesson materials is at https://jornada-im.github.io/2022-03-07-southern-nm-online/. And our collaborative document (etherpad) is at https://pad.carpentries.org/2022-03-07-southern-nm-online
+13:17:03 From Dawn Browning (she/her) to Everyone:
+	"New query" is which icon (again)? Pardon.
+13:17:45 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Execute SQL
+13:17:46 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	If you’d like a new tab it is the icon farthest to the left
+13:20:05 From Diana Macias to Everyone:
+	Can we slow down? lol
+13:20:21 From Savannah Meadors (she/her/hers) to Everyone:
+	This code wasn't working for me for the initial demo line of code, is "count" a function?
+13:20:46 From Diana Macias to Everyone:
+	^^ same I haven't been able to successfully execute
+13:20:53 From Carla Gavilan to Everyone:
+	maybe we can add more lines of code instead of modifying it? so we can always go back to the it?
+13:21:04 From Savannah Meadors (she/her/hers) to Everyone:
+	Also I'm not totally clear what the wildcard is used for
+13:21:16 From Jon Wheeler (he/him) UNM to Everyone:
+	I have copied Edmundo's code into the etherpad, too
+13:21:28 From Julie Schlichte to Everyone:
+	I agree with @Carla, thank you\
+13:21:32 From Jon Wheeler (he/him) UNM to Everyone:
+	etherpad link: https://pad.carpentries.org/2022-03-07-southern-nm-online
+13:23:29 From Carla Gavilan to Everyone:
+	yes thanks Edmundo!
+13:23:56 From Trevor Roberts to Everyone:
+	So does the wildcard * typically mean “all?” Bc select(*) selects all columns and count(*) counts all rows?
+13:24:03 From Savannah Meadors (she/her/hers) to Everyone:
+	I'm getting this error for this first line, do I need to reload my database or something?		"Execution finished with errors.	Result: no such column: surveys	At line 1:"
+13:24:43 From Dawn Browning (she/her) to Everyone:
+	Savannah,  is your table called surveys (instead of surveysNew)?
+13:25:29 From Savannah Meadors (she/her/hers) to Everyone:
+	it's called surveys, but I entered surveys into the code :/
+13:25:41 From Diana Macias to Everyone:
+	error message: 	Execution finished with errors.	Result: near "FROM": syntax error	At line 6:	FROM
+13:26:51 From Savannah Meadors (she/her/hers) to Everyone:
+	okay mine works now! I was able to do it this time
+13:27:19 From Jon Wheeler (he/him) UNM to Everyone:
+	great! thanks for letting us know
+13:28:36 From Carla Gavilan to Everyone:
+	@edmundo could you repeat the round example?
+13:33:02 From Darren James (Helper) to Everyone:
+	@Carla are you clear on the ROUND() example now?
+13:33:35 From Carla Gavilan to Everyone:
+	yes thanks!
+13:35:08 From Gayle Tyree (they/them) to Everyone:
+	It might be helpful to use argument names in functions when they're first introduced (if that's how SQL does things!) --> such as ROUND(data = (sum(weight)/1000), digits = 3).
+13:35:25 From David.Huber to Everyone:
+	AVE function doesn't work for me, not blue
+13:35:51 From David.Huber to Everyone:
+	NM
+13:36:12 From Darren James (Helper) to Everyone:
+	@David try AVG()
+13:36:24 From Alesia Hallmark to Everyone:
+	That’s hard to see, David! The function is AVG, not AVE. I made the same mistake 🙂
+13:39:25 From Carla Gavilan to Everyone:
+	yay!
+13:41:16 From Habibur to Everyone:
+	Yes
+13:41:22 From David.Huber to Everyone:
+	yep
+13:43:41 From Lauren Cohen to Everyone:
+	Yes!
+13:53:34 From Carla Gavilan to Everyone:
+	lol
+13:53:35 From Gregor Hamilton - UNM (he/him) to Everyone:
+	I wondered about that haha. Why wouldn't that change anything? That's wilde
+13:53:36 From Julie Schlichte to Everyone:
+	Can you also do GROUP BY species ID and ORDER BY year instead of having them both on the same line?
+13:54:22 From Julie Schlichte to Everyone:
+	I seemed to have got the same result, but don't know why!
+13:55:28 From Julie Schlichte to Everyone:
+	OK, I see. thank you\
+13:57:16 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	@Julie I just did the query with year moved to an ORDER BY clause and you only get the summary data by species, though it is ordered by year
+14:02:10 From Savannah Meadors (she/her/hers) to Everyone:
+	where does the survey name change happen? Is it changed in the database structure now
+14:02:26 From Carla Gavilan to Everyone:
+	same question
+14:02:51 From Gregor Hamilton - UNM (he/him) to Everyone:
+	So its a new table that you can use within the code downstream, is that right?
+14:02:57 From Jon Wheeler (he/him) UNM to Everyone:
+	@Savannah, that is a good question. The name of the actual table stays the same - the alias is ephemeral and can be referenced later in a longer query
+14:03:06 From Carla Gavilan to Everyone:
+	got it
+14:03:43 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	@Gregor - yes. Sometimes SQL queries are long and can involve multiple tables, so it can help to alias them for specificity or just to be clear in the query
+14:05:04 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	@Gregor - correction - its a new table _name_ not a new table added to the database
+14:05:32 From Dawn Browning (she/her) to Everyone:
+	In line 37, is Count(species_id) same as count(*) since it's selected?
+14:06:11 From Julie Schlichte to Everyone:
+	@Dawn I had the same question
+14:06:23 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	Essentially they are the same if species_id doesn’t have any null values
+14:07:05 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	COUNT(*) counts all observations in the group, while COUNT(fieldname) counts all non-null values in the grouped field
+14:07:08 From Gayle Tyree (they/them) to Everyone:
+	Still fuzzy on 'where' vs 'having'
+14:07:58 From Dawn Browning (she/her) to Everyone:
+	can you repeat that?
+14:08:30 From Jon Wheeler (he/him) UNM to Everyone:
+	WHERE tests the condition per row, HAVING tests the condition for an aggregated value for a group
+14:09:03 From Christopher Vito to Everyone:
+	Does ctrl+ENTER run all the code in the ExecuteSQL script, or just what the cursor is on?
+14:09:10 From Savannah Meadors (she/her/hers) to Everyone:
+	all of it
+14:09:22 From Christopher Vito to Everyone:
+	Ok, thanks! I thought so
+14:10:02 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	You can highlight lines of your SQL script and then use Ctrl+Enter to run only those
+14:10:33 From Trevor Roberts to Everyone:
+	Why did we switch from COUNT(*) to COUNT(species_id)?
+14:13:09 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	Good question Trevor - Count(*) counts all the observations in a group, Count(species_id) counts only non-null values in the field. The species_id has some NULL values
+14:21:02 From Habibur to Everyone:
+	Great job Edmundo
+14:21:05 From Dawn Browning (she/her) to Everyone:
+	MANY great tips here Edmundo! It's a lot (you did great).
+14:21:11 From Savannah Meadors (she/her/hers) to Everyone:
+	So it would also work to say count (species_id) to count specifically the number of species, right?
+14:21:18 From Gayle Tyree (they/them) to Everyone:
+	Thanks Edmundo! Question - what is the convention for null values in SQL? Is it NA, NULL, ..?
+14:22:08 From Dawn Browning (she/her) to Everyone:
+	Break and Qs after or stay if you want? :-)
+14:22:43 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	We will make sure to take 5 right after questions
+14:23:46 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	https://datacarpentry.org/sql-ecology-lesson/02-sql-aggregation/index.html
+14:24:32 From Gayle Tyree (they/them) to Everyone:
+	Awesome, thanks Greg
+14:24:37 From Jon Wheeler (he/him) UNM to Everyone:
+	Back at 2:30
+14:24:48 From Dawn Browning (she/her) to Everyone:
+	THank you team!
+14:37:47 From Diana Macias to Everyone:
+	Can you get rid of the redundant column?
+14:39:07 From Diana Macias to Everyone:
+	by same column do you mean the same column name or more than that?
+14:39:56 From Jon Wheeler (he/him) UNM to Everyone:
+	the shared column in both tables has to have the same name when using the USING clause
+14:42:20 From Christopher Vito to Everyone:
+	So here, the "." is doing something similar to what "$" does in R to select a column from a dataframe, correct?
+14:42:48 From Jon Wheeler (he/him) UNM to Everyone:
+	Yes, that is an excellent analogy
+14:43:10 From Christopher Vito to Everyone:
+	thanks!
+14:44:03 From Jon Wheeler (he/him) UNM to Everyone:
+	Also in case not everyone is using the etherpad: Write a query that returns the genus, the species name, and the weight of every individual captured at the site
+14:49:50 From Dawn Browning (she/her) to Everyone:
+	hmmm. my lines 26-30 returns an error:	--Count our records	SELECT COUNT(*)	FROM surveys	JOIN species	USING species_id;
+14:50:43 From Dawn Browning (she/her) to Everyone:
+	TYPO?	Execution finished with errors.	Result: near "species_id": syntax error	At line 100:	SELECT COUNT(*)	FROM surveys	JOIN species	USING species_id
+14:50:43 From Jon Wheeler (he/him) UNM to Everyone:
+	@Dawn try parenthesis around the species_id after the USING clause
+14:51:21 From Dawn Browning (she/her) to Everyone:
+	Thanks Jon! That was it. Can you clarify why that's needed?
+14:53:25 From Jon Wheeler (he/him) UNM to Everyone:
+	Just guessing but I think it has to do with the same column name being found in multiple tables. But I will look it up!
+14:56:20 From Jon Wheeler (he/him) UNM to Everyone:
+	It doesn't provide an explanation, but the SQLite documentation does show a required parenthesis around the column name for the USING clause: https://sqlite.org/syntax/join-constraint.html
+15:11:43 From Dawn Browning (she/her) to Everyone:
+	I'm intrigued.
+15:13:18 From Jon Wheeler (he/him) UNM to Everyone:
+	The solution is in the etherpad
+15:15:37 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	https://datacarpentry.org/R-ecology-lesson/index.html
+15:23:53 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	Searching CRAN (https://cran.r-project.org) and GitHub (https://github.com) abd Rdocumentation (https://www.rdocumentation.org) will help you find new packages
+15:29:02 From Jon Wheeler (he/him) UNM to Everyone:
+	If you haven't been able to install R and RStudio or the tidyverse, please message me directly
+15:33:20 From Diana Macias to Everyone:
+	so you wouldn't recommend putting your project in a project folder?
+15:34:16 From Alesia Hallmark to Everyone:
+	For Mac users: That menu is under “RStudio” > “Preferences”
+15:34:51 From Christopher Vito to Everyone:
+	So is R predominantly remembering things like objects? Unchecking this doesn't impact scripts that have been saved, right?
+15:36:59 From Jon Wheeler (he/him) UNM to Everyone:
+	Saving as a Git repository is also a good approach, as RStudio supports Git version control via GitHub, etc
+15:37:16 From Savannah Meadors (she/her/hers) to Everyone:
+	How do you get that as an option?
+15:37:25 From Christopher Vito to Everyone:
+	Also, could you clarify the difference between history and workspace?
+15:37:28 From Savannah Meadors (she/her/hers) to Everyone:
+	(re: Jon's git suggestion)
+15:37:35 From Darren James (Helper) to Everyone:
+	@Christopher You're right--unchecking this won't impact your other scripts
+15:37:59 From Jon Wheeler (he/him) UNM to Everyone:
+	Savannah, when you create a project there is an option to enable version control
+15:38:49 From Darren James (Helper) to Everyone:
+	@Christopher The workspace contains the objects in your current R session.  Your history is the workspace that was created in your previous R session.
+15:42:45 From Christopher Vito to Everyone:
+	I've been wondering about that for far longer than I would like to admit
+15:44:00 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	https://datacarpentry.org/R-ecology-lesson/code-handout.R
+15:46:17 From Jon Wheeler (he/him) UNM to Everyone:
+	back at 3:55
+15:55:12 From Julie Schlichte to Everyone:
+	When I saved the sample code (to my mac - same place as the R project), I still don't see it populating in the files pane. Can I get some troubleshooting please?
+15:55:50 From Christopher Vito to Everyone:
+	I'm having a similar issue
+15:57:46 From Darren James (Helper) to Everyone:
+	@Julie and @Christopher: Try File > Open File and navigate to the file … does that work?
+15:57:56 From Julie Schlichte to Everyone:
+	Thank you! That worked
+15:58:27 From Julie Schlichte to Everyone:
+	(the getwd command), I was saving it outside of the folder we just created
+16:01:59 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html
+16:02:48 From Gregor Hamilton - UNM (he/him) to Everyone:
+	As long as its not a gigantic red block like SQL! :)
+16:03:00 From Diana Macias to Everyone:
+	LOL
+16:03:12 From Dawn Browning (she/her) to Everyone:
+	@Gregor :D
+16:03:49 From Alesia Hallmark to Everyone:
+	https://datacarpentry.org/R-ecology-lesson/01-intro-to-r.html#Challenge19
+16:06:20 From Diana Macias to Everyone:
+	textmate
+16:14:57 From Savannah Meadors (she/her/hers) to Everyone:
+	220
+16:15:09 From Diana Macias to Everyone:
+	the same unless u rerun
+16:45:58 From Gregor Hamilton - UNM (he/him) to Everyone:
+	When I get an warning about something "introduced by coercion" is that what's happening under the hood?
+16:46:05 From Gregor Hamilton - UNM (he/him) to Everyone:
+	a warning*
+16:47:21 From Gregor Hamilton - UNM (he/him) to Everyone:
+	I have always just shrugged and moved on with my life haha. The more you know...
+16:47:22 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Thanks
+17:00:48 From Dawn Browning (she/her) to Everyone:
+	clever tricks Aleisia
+17:02:11 From Gregory Maurer (co-instructor- he/him) to Everyone:
+	🐀🐕
+17:04:48 From Diana Macias to Everyone:
+	can you ask R to tell you how many values were excluded from ur mean?
+17:08:28 From Jon Wheeler (he/him) UNM to Everyone:
+	Diana, there are a couple approaches but a quick way to get a count of NA values using our example would be sum(is.na(heights))
+17:11:33 From Dawn Browning (she/her) to Everyone:
+	Thanks all for a good day. I have to run.
+17:12:46 From Jon Wheeler (he/him) UNM to Everyone:
+	Day 2 anonymous feedback: https://forms.gle/htGx9n659ffuneP39
+17:12:47 From David.Huber to Everyone:
+	Great talk Alesia, thx
+17:12:56 From Diana Macias to Everyone:
+	Thanks Alesia :)
+17:13:00 From Carla Gavilan to Everyone:
+	this was so much fun Alesia! thanks!
+17:13:09 From Jon Wheeler (he/him) UNM to Everyone:
+	NM EPSCOR demographic survey (only if you haven't already filled it out): 	https://www.surveymonkey.com/r/DQPVFWD
+17:13:14 From Gayle Tyree (they/them) to Everyone:
+	Thanks Alesia!
+17:13:21 From Habibur to Everyone:
+	thanks Alesia
+17:13:25 From Lauren Cohen to Everyone:
+	That was very helpful, thank you Alesia!
+17:13:32 From Alesia Hallmark to Everyone:
+	Thank you all for playing along! Sorry for going overtime
+17:13:34 From Savannah Meadors (she/her/hers) to Everyone:
+	Thanks Alesia!
+17:13:36 From Julie Schlichte to Everyone:
+	Thank you all! See you tomorrow
+17:13:37 From Gregor Hamilton - UNM (he/him) to Everyone:
+	Thanks everyone!
+17:13:37 From Madeline Buhman to Everyone:
+	Thank you!
+17:13:38 From Diana Macias to Everyone:
+	will we be working in the same script tomorrow?
+17:13:43 From Carla Gavilan to Everyone:
+	thanks everyone!
+17:13:49 From Gayle Tyree (they/them) to Everyone:
+	Thanks for all the great learnin'! See y'all!

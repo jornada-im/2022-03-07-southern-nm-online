@@ -1,0 +1,316 @@
+13:00:01 From Carla Gavilan to Everyone:
+	Hi everyone!
+13:00:32 From Alesia Hallmark to Everyone:
+	Good afternoon 🙂
+13:00:41 From Gregor Hamilton to Everyone:
+	Howdy
+13:00:50 From Jon Wheeler (he/him) UNM to Everyone:
+	Welcome back! Our workshop website is at https://jornada-im.github.io/2022-03-07-southern-nm-online/ and the etherpad is at https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html
+13:02:22 From Jon Wheeler (he/him) UNM to Everyone:
+	And here is the correct link for the etherpad: https://datacarpentry.org/R-ecology-lesson/02-starting-with-data.html
+13:02:34 From Jon Wheeler (he/him) UNM to Everyone:
+	Arg... paste errors, hang on
+13:02:45 From Jon Wheeler (he/him) UNM to Everyone:
+	https://pad.carpentries.org/2022-03-07-southern-nm-online
+13:07:12 From Jon Wheeler (he/him) UNM to Everyone:
+	Here's the etherpad link again for anyone who just joined us: https://pad.carpentries.org/2022-03-07-southern-nm-online
+13:12:31 From Alesia Hallmark to Everyone:
+	and those comments can help us modify the lessons so *all* instructors can improve their pacing 🙂
+13:13:24 From Jon Wheeler (he/him) UNM to Everyone:
+	Can you figure out why "four" > "five" returns TRUE?
+13:21:28 From Gregor Hamilton to Everyone:
+	I get this error: Error in download.file(url = "https://ndownloader.figshare.com/files/2292169",  : 	  cannot open destfile 'data_raw/portal_data_joined.csv', reason 'No such file or directory'
+13:21:38 From Julie Schlichte to Everyone:
+	object "data_raw" not found
+13:21:51 From Darren James to Everyone:
+	dir.create("data_raw")
+13:22:06 From Gayle Tyree (they/them) to Everyone:
+	I got this error: Error in download.file(url = "https://ndownloader.figshare.com/files/2292169",  : 	  cannot open destfile 'data_raw', reason 'Permission denied'
+13:22:22 From Gregor Hamilton to Everyone:
+	That worked for me, thanks Darren et al.
+13:22:26 From Dawn Browning (she/her) to Everyone:
+	Darren, did you paste the code?
+13:22:33 From Dawn Browning (she/her) to Everyone:
+	Ah...I see it.
+13:22:37 From Darren James to Everyone:
+	download.file(url = "https://ndownloader.figshare.com/files/2292169",	              destfile = "data_raw/portal_data_joined.csv")
+13:22:43 From Alesia Hallmark to Everyone:
+	Gayle, what is your current working directory? You can check using getwd()
+13:23:20 From Gayle Tyree (they/them) to Everyone:
+	Alesia: > getwd()	[1] "C:/Users/Gtyree/Documents/data-carpentry-jer-2022"	>
+13:23:39 From Gayle Tyree (they/them) to Everyone:
+	I think it was how I had my command typed. I tried Darren's version and it worked for me.
+13:24:06 From Julie Schlichte to Everyone:
+	I have the data_raw folder, still not letting me get the data {I do not have a mic if a helper can message me please}
+13:24:53 From Diana Toups Dugas to Everyone:
+	@Julie, where is your data_raw folder located (the path)?
+13:27:36 From Dawn Browning (she/her) to Everyone:
+	Hi helpers! I came in late. Can someone copy the code we started with today and put it in the Etherpad doc for me OR in a DM here. TY.
+13:28:00 From Savannah Meadors (she/her/hers) to Everyone:
+	It's just the Alt and  - buttons, not Alt and + and -, right? haha
+13:28:31 From Alesia Hallmark to Everyone:
+	Correct, Savannah!
+13:28:49 From Alesia Hallmark to Everyone:
+	ALT and -
+13:29:07 From Darren James to Everyone:
+	@Dawn do you still need the code?
+13:29:14 From Madeline Buhman to Everyone:
+	When I loaded the data frame I didn’t see the Column specification information pop up in my console. How do I get that?
+13:29:50 From Dawn Browning (she/her) to Everyone:
+	@Darren. Yes. up to line 172 Thx
+13:30:08 From Darren James to Everyone:
+	@Madeline did you use read.csv() or read_csv()?
+13:30:15 From Savannah Meadors (she/her/hers) to Everyone:
+	is read.csv going to give me the same output
+13:30:18 From Madeline Buhman to Everyone:
+	read.csv
+13:30:25 From Savannah Meadors (she/her/hers) to Everyone:
+	what's the difference between the two?
+13:30:31 From Darren James to Everyone:
+	For Dawn:
+13:30:33 From Darren James to Everyone:
+	library(tidyverse)	dir.create("data_raw")		download.file(url = "https://ndownloader.figshare.com/files/2292169",	              destfile = "data_raw/portal_data_joined.csv")		surveys <- read_csv("data_raw/portal_data_joined.csv")
+13:31:16 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	Folks - I put some instructions for creating the directory, downloading the data, and loading into R in the ether pad at line 428
+13:31:35 From Dawn Browning (she/her) to Everyone:
+	@Darren. Got it. Thx.
+13:32:36 From Madeline Buhman to Everyone:
+	Got it, thank you!
+13:40:29 From Dawn Browning (she/her) to Everyone:
+	what's difference between row.names vs rownames?
+13:41:10 From Dawn Browning (she/her) to Everyone:
+	I can look it up.
+13:41:21 From Alesia Hallmark to Everyone:
+	row.names is specific to data.frames
+13:41:33 From Alesia Hallmark to Everyone:
+	rownames works for different types of data structures
+13:41:46 From Dawn Browning (she/her) to Everyone:
+	thank you!
+13:42:50 From Jon Wheeler (he/him) UNM to Everyone:
+	Based on the output of str(surveys), can you answer the following questions?		    What is the class of the object surveys?	    How many rows and how many columns are in this object?
+13:43:00 From Carla Gavilan to Everyone:
+	yes! stackoverflow saved my life some many times!
+13:44:26 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	Don’t forget the ‘?’ Operator to get help directly from R (?rownames, ?row.names)
+13:50:58 From Dawn Browning (she/her) to Everyone:
+	surveys[1] = surveys[1, ] , I presume and not surveys[ ,1]. Correct?
+13:51:50 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	surveys[1] will give the first column by default
+13:54:51 From Darren James to Everyone:
+	@Dawn you bring up a good point.  The bracket notation is in the form [rows,columns] but if you don't use a comma then the numbers refer to columns only.  So surveys[1] is the same as surveys[,1]
+13:56:31 From Julie Schlichte to Everyone:
+	If we ask for a vector using surveys [[,1]] the error says subscript can't be missing for tibbles… why can't we get a vector of the first column?
+13:56:50 From Julie Schlichte to Everyone:
+	first row, sorry
+13:59:27 From Julie Schlichte to Everyone:
+	OK, at least I know if I see this error in the future, what it may mean!
+14:00:24 From Jon Wheeler (he/him) UNM to Everyone:
+	Create a data.frame (surveys_200) containing only the data in row 200 of the surveys dataset.		    Notice how nrow() gave you the number of rows in a data.frame?		    Use that number to pull out just that last row in the data frame.		    Compare that with what you see as the last row using tail() to make sure it’s meeting expectations.		    Pull out that last row using nrow() instead of the row number.		    Create a new data frame (surveys_last) from that last row.		    Use nrow() to extract the row that is in the middle of the data frame. Store the content of this row in an object named surveys_middle.		    Combine nrow() with the - notation above to reproduce the behavior of head(surveys), keeping just the first through 6th rows of the surveys dataset.
+14:11:10 From Savannah Meadors (she/her/hers) to Everyone:
+	could you also just do surveys[1:6,]?
+14:11:38 From Jon Wheeler (he/him) UNM to Everyone:
+	back at 2:15
+14:11:40 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	Break until 2:15
+14:12:47 From Savannah Meadors (she/her/hers) to Everyone:
+	okay cool, so you just wanted to highlight how to use reverse indexing for this last exercise, right? not saying that this is the way this solution "should" be reached
+14:13:17 From Jon Wheeler (he/him) UNM to Everyone:
+	yes, it does come in handy sometimes with large datasets when you are just exploring them
+14:25:56 From Jon Wheeler (he/him) UNM to Everyone:
+	Change the columns taxa and genus in the surveys data frame into a factor.		    Using the functions you learned before, can you find out…	        How many rabbits were observed?	        How many different genera are in the genus column?
+14:29:38 From Christopher Vito to Everyone:
+	thanks!
+14:39:37 From Jon Wheeler (he/him) UNM to Everyone:
+	Rename “F” and “M” to “female” and “male” respectively.
+14:40:23 From Jon Wheeler (he/him) UNM to Everyone:
+	In the surveys$sex vector
+14:54:03 From Alesia Hallmark to Everyone:
+	More tips and tricks for dealing with dates and times in R: https://raw.githubusercontent.com/rstudio/cheatsheets/main/lubridate.pdf
+14:54:31 From Julie Schlichte to Everyone:
+	Is there a reason we renamed surveys$date instead of surveys_date?
+14:55:24 From Alesia Hallmark to Everyone:
+	“surveys_date <- …” would create a stand-alone (atomic) vector
+14:55:41 From Julie Schlichte to Everyone:
+	OK thank you
+14:55:45 From Alesia Hallmark to Everyone:
+	“surveys$date <- …” creates a new column in our data.frame
+14:55:58 From Julie Schlichte to Everyone:
+	That makes sense!
+15:00:56 From Diana Macias to Everyone:
+	does select only work on columns?
+15:03:13 From Darren James (Helper) to Everyone:
+	@Diana yes
+15:09:26 From Christopher Vito to Everyone:
+	can you repeat the keyboard shortcut for a pipe?
+15:09:42 From Savannah Meadors (she/her/hers) to Everyone:
+	%>%?
+15:09:52 From Diana Macias to Everyone:
+	ctrl shift m
+15:10:10 From Darren James (Helper) to Everyone:
+	In RStudio the keyboard shortcut for the pipe operator %>% is Ctrl + Shift + M (Windows) or Cmd + Shift + M (Mac).
+15:10:54 From Carla Gavilan to Everyone:
+	something related to the painter? Magritte? 🍏
+15:11:04 From Carla Gavilan to Everyone:
+	no idea
+15:13:00 From Jon Wheeler (he/him) UNM to Everyone:
+	@Carla, maybe yes? The magrittr documentation at https://magrittr.tidyverse.org/ has his "Ces't ne pas un pipe" in the logo/icon.
+15:13:53 From Christopher Vito to Everyone:
+	So the way to read a series of code using pipes like this would be:	"The 'surveys' dataframe (or tibble) is being filtered by weight and then we are selecting the species, sex, and weight columns from within that filtered table?"		I have struggled to read these things in the past, so I want to make sure I'm following it.
+15:16:08 From Julie Schlichte to Everyone:
+	Do we have to do filter before select always?
+15:18:20 From Jon Wheeler (he/him) UNM to Everyone:
+	Back at 3:28
+15:27:35 From Dawn Browning (she/her) to Everyone:
+	Ready to mutate!
+15:28:07 From Darren James (Helper) to Everyone:
+	@Dawn Caffeine is a bacterial mutagen, so coffee will help.
+15:28:17 From Carla Gavilan to Everyone:
+	lol
+15:28:30 From Dawn Browning (she/her) to Everyone:
+	Thanks @Darren. You get me.
+15:37:23 From Julie Schlichte to Everyone:
+	Can you remind me what the ! means?
+15:37:38 From Jon Wheeler (he/him) UNM to Everyone:
+	it is a shorthand for "not"
+15:37:49 From Julie Schlichte to Everyone:
+	thank you
+15:37:57 From Diana Macias to Everyone:
+	should you filter NAs before the other commands?
+15:38:09 From Diana Macias to Everyone:
+	or can you write that line at the end?
+15:38:22 From Madeline Buhman to Everyone:
+	Why not just use the na.rm function?
+15:38:24 From Darren James (Helper) to Everyone:
+	@Diana You can put it at the end
+15:39:46 From Madeline Buhman to Everyone:
+	Okay, thank you!
+15:42:32 From Jon Wheeler (he/him) UNM to Everyone:
+	Create a new data frame from the surveys data that meets the following criteria: contains only the species_id column and a new column called hindfoot_cm containing the hindfoot_length values (currently in mm) converted to centimeters. In this hindfoot_cm column, there are no NAs and all values are less than 3.		Hint: think about how the commands should be ordered to produce this data frame!
+15:43:31 From Jon Wheeler (he/him) UNM to Everyone:
+	Etherpad link for anyone who got disconnected: https://pad.carpentries.org/2022-03-07-southern-nm-online
+15:45:59 From Dawn Browning (she/her) to Everyone:
+	What's the key stroke shortcut for pipe?
+15:46:19 From Jon Wheeler (he/him) UNM to Everyone:
+	On windows it's CTL+SHIFT+M
+15:46:39 From Jon Wheeler (he/him) UNM to Everyone:
+	Cmd + Shift + M (Mac).
+15:52:11 From Darren James (Helper) to Everyone:
+	Side note: R versions 4.1 and newer have a new base pipe function: |>  It works similarly to %>% but %>% has more functionality in the tidyverse.
+15:52:46 From Gayle Tyree (they/them) to Everyone:
+	Oh cool! Thanks for the tip, Darren!
+15:59:51 From Gregor Hamilton to Everyone:
+	Why was the second version containing fewer observations?
+16:01:04 From Gregor Hamilton to Everyone:
+	Gotcha
+16:06:40 From Gayle Tyree (they/them) to Everyone:
+	Is there a similar verb to re-arrange columns? Or do you just have to use select?
+16:08:46 From Darren James (Helper) to Everyone:
+	@Gayle I find select() to be easiest, but I think there's also a relocate() function
+16:09:00 From Darren James (Helper) to Everyone:
+	@ Gayle https://dplyr.tidyverse.org/reference/relocate.html
+16:09:05 From Gayle Tyree (they/them) to Everyone:
+	Ok cool. Thanks Darren
+16:10:33 From Diana Macias to Everyone:
+	does the new column stay in the tibble?
+16:10:44 From Diana Macias to Everyone:
+	if you were to assign the code to a new df
+16:12:09 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	How many animals were caught in each plot_type surveyed?
+16:12:17 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	Use group_by() and summarize() to find the mean, min, and max hindfoot length for each species (using species_id). Also add the number of observations (hint: see ?n).
+16:12:23 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	What was the heaviest animal measured in each year? Return the columns year, genus, species_id, and weight.
+16:23:34 From Julie Schlichte to Everyone:
+	I keep getting the error "unexpected symbol in...." is there a good way to find where my unexpected symbol is?
+16:32:42 From Alesia Hallmark to Everyone:
+	It’s that time of day
+16:42:24 From Alesia Hallmark to Everyone:
+	https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html#Customization
+16:43:41 From Alesia Hallmark to Everyone:
+	https://www.rstudio.com/resources/cheatsheets/
+16:43:54 From Diana Macias to Everyone:
+	greg- can you put the last line for the complete csv? thanks!
+16:43:58 From Jon Wheeler (he/him) UNM to Everyone:
+	I use the cheatsheets all the time
+16:44:54 From Julie Schlichte to Everyone:
+	Thank you for the resources!
+16:45:58 From Diana Macias to Everyone:
+	Thanks!
+16:47:25 From Julie Schlichte to Everyone:
+	Will the datacarpentry.org webpages be available in the future to us (or do they get deleted after the workshop)?
+16:47:43 From Diana Macias to Everyone:
+	^^ great q
+16:48:04 From Jon Wheeler (he/him) UNM to Everyone:
+	the lesson materials are freely available and should be up for years to come: https://datacarpentry.org/ecology-workshop/
+16:48:13 From Carla Gavilan to Everyone:
+	great!
+16:49:33 From Julie Schlichte to Everyone:
+	Very appreciated, thank you
+16:49:47 From Jon Wheeler (he/him) UNM to Everyone:
+	Post workshop survey: https://carpentries.typeform.com/to/UgVdRQ?slug=2022-03-07-southern-nm-online
+16:50:12 From Alesia Hallmark to Everyone:
+	Thank you all for the feedback!
+16:50:52 From Diana Macias to Everyone:
+	THANK YOU!
+16:51:08 From Christopher Vito to Everyone:
+	Thank you!
+16:51:29 From Savannah Meadors (she/her/hers) to Everyone:
+	This was so helpful! Definitely tons of information packed into a relatively short course, I really appreciate how patient, kind, and knowledgeable y'all are!
+16:51:43 From Gayle Tyree (they/them) to Everyone:
+	The post-workshop survey asks for a unique identifier assigned when we did the pre-workshop survey. I don't see that in my email - any thoughts on how to recover it?
+16:51:54 From Madeline Buhman to Everyone:
+	Thank you so much!
+16:52:49 From Jon Wheeler (he/him) UNM to Everyone:
+	Gayle, that could be an error in the link I shared. Please try going to the workshop website at https://jornada-im.github.io/2022-03-07-southern-nm-online/. Scroll down to the end of Day 3 in the schedule for a link to the survey.
+16:53:01 From Carla Gavilan to Everyone:
+	thanks SO much! the workshop was super helpful- also blocking that amount of time really "forced" me to focus an be present!
+16:53:11 From Carla Gavilan to Everyone:
+	*and
+16:53:14 From Julie Schlichte to Everyone:
+	@Gayle the identifier is your numeric number of siblings, first 2 letters of city you born, first 3 letters of your current street
+16:53:51 From Gayle Tyree (they/them) to Everyone:
+	Gotcha - thanks Julie and Jon!
+16:54:29 From Alesia Hallmark to Everyone:
+	That’s way more secure than my usual passwords 😂
+16:55:10 From Gregory Maurer (co-instructor - he/him) to Everyone:
+	https://datacarpentry.org/R-ecology-lesson/05-r-and-databases.html
+16:57:50 From David.Huber to Everyone:
+	Have to run. Thanks all!
+16:58:25 From Diana Macias to Everyone:
+	I wish there was a part 2 with this same group!
+16:58:33 From Diana Macias to Everyone:
+	that's my recommendation LOL
+16:58:41 From Carla Gavilan to Everyone:
+	Agree!
+16:58:41 From Jon Wheeler (he/him) UNM to Everyone:
+	We may have in person workshops soon
+16:58:48 From Gregor Hamilton to Everyone:
+	Hear Hear, Diana
+16:58:51 From Julie Schlichte to Everyone:
+	@Diana I agree
+16:58:59 From Diana Macias to Everyone:
+	and no one else
+16:59:00 From Diana Macias to Everyone:
+	jk
+16:59:05 From Alesia Hallmark to Everyone:
+	maybe at the Sevilleta next time… 🙂
+16:59:54 From Carla Gavilan to Everyone:
+	I will let the soil science people know !
+17:00:23 From Christopher Vito to Everyone:
+	Thanks again for all the help!
+17:00:27 From Diana Macias to Everyone:
+	Thank you everyone! This was a fun 3 days :)
+17:01:12 From Trevor Roberts to Everyone:
+	Thank you!
+17:01:14 From Gregor Hamilton to Everyone:
+	Thanks all, I'm grateful I could attend this!
+17:01:42 From Madeleine Soss to Everyone:
+	Thank you so much! Learned a lot!
+17:01:44 From Gayle Tyree (they/them) to Everyone:
+	This workshop was fantastic! Many thanks to the instructors, helpers, and my fellow learners for making this a fun and informative few days!
+17:02:15 From Carla Gavilan to Everyone:
+	Thanks so much! see you next time!
+17:03:08 From Savannah Meadors (she/her/hers) to Everyone:
+	I agree this was a really fun group, I would love another workshop to follow up!!
+17:05:56 From Nazanin to Everyone:
+	no thank you

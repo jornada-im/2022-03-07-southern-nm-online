@@ -16,7 +16,7 @@ enddate: 2022-03-09        # machine-readable end date for the workshop in YYYY-
 instructor: ["Alesia Hallmark", "Gregory Maurer", "Edmundo Medina Gurrola", "Jon Wheeler"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Darren James", "Geovany Ramirez", "Diana Toups Dugas"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["gmaurer@nmsu.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+collaborative_notes:  https://pad.carpentries.org/2022-03-07-southern-nm-online
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -246,10 +246,18 @@ Display the contact email address set in the configuration file.
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
-
+{% comment %}
 <p id="register">
   <strong>Register:</strong>
   To register for the workshop, please visit the <a href="https://www.nmepscor.org/what-we-do/programs/data-carpentry-for-environmental-scientists">NM EPSCoR workshop event page</a>.
+</p>
+{% endcomment %}
+
+
+<p id="archive">
+  <strong>Archived materials:</strong>
+  The community materials generated in the workshop have been archived on 
+  GitHub. See the <a href="https://github.com/jornada-im/2022-03-07-southern-nm-online/tree/gh-pages/chat">public chat files</a>, and the <a href=https://github.com/jornada-im/2022-03-07-southern-nm-online/tree/gh-pages/etherpad>etherpad exports</a>.
 </p>
 
 {% comment %}
