@@ -254,10 +254,16 @@ Display the contact email address set in the configuration file.
 {% endcomment %}
 
 
-<p id="archive">
-  <strong>Archived materials:</strong>
-  The community materials generated in the workshop have been archived on 
-  GitHub. See the <a href="https://github.com/jornada-im/2022-03-07-southern-nm-online/tree/gh-pages/chat">public chat files</a>, and the <a href=https://github.com/jornada-im/2022-03-07-southern-nm-online/tree/gh-pages/etherpad>etherpad exports</a>.
+<p id="archive1">
+  <strong>Archived chat:</strong>
+  The community chat generated in the workshop has been archived on 
+  GitHub. See the <a href="https://github.com/jornada-im/2022-03-07-southern-nm-online/tree/gh-pages/chat">public chat files</a>.
+</p>
+
+<p id="archive2">
+  <strong>Archived notes:</strong>
+  The collaborative notes from the workshop (on EtherPad) have also been archived on 
+  GitHub. See the <a href=https://github.com/jornada-im/2022-03-07-southern-nm-online/tree/gh-pages/etherpad>etherpad exports</a>.
 </p>
 
 {% comment %}
